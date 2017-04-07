@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,7 +21,6 @@ public class Recursion {
 				return list;
 			}
 			if(list.get(list.size()-1).equals(list.get(list.size()-2))){
-				list.subList(0, list.size());
 				list.remove(list.size()-1);
 				return unique(list);
 			}
